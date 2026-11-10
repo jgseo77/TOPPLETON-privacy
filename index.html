@@ -46,7 +46,8 @@
 <p>본 앱은 영구 상품(테마 팩 — 추가 테마와 보너스 판을 열고, 보상형 광고 없이 보상 받기)을 판매합니다.</p>
 <ul>
   <li>결제는 Apple App Store 또는 Google Play가 처리하며, 개발자는 카드번호·계좌 등 결제수단 정보를 일절 수집하거나 열람하지 않습니다.</li>
-  <li>본 앱이 보관하는 것은 구매한 상품과 그에 따라 열린 테마뿐이며, 기기와 이용자 본인의 클라우드 저장(4항)에만 저장됩니다. 기기를 바꾸거나 앱을 다시 설치한 경우 구매를 복원하기 위해 앱이 해당 스토어에 이용자 본인의 구매 이력을 조회합니다.</li>
+  <li>본 앱이 보관하는 것은 구매한 상품, 구매 시각(환불된 경우 환불 확인 시각)과 그에 따라 열린 테마뿐이며, 기기와 이용자 본인의 클라우드 저장(4항)에만 저장됩니다. 기기를 바꾸거나 앱을 다시 설치한 경우 구매를 복원하기 위해 앱이 해당 스토어에 이용자 본인의 구매 이력을 조회합니다(설정의 [구매 복원]).</li>
+  <li>Android에서는 앱을 켤 때와 결제창에서 돌아올 때 이용자 본인의 구매 목록을 Google Play에 조회하여, 환불된 구매는 테마 팩을 다시 잠그고 늦게 완료된 결제를 지급합니다. 이 조회 결과도 기기 밖으로 보내지 않습니다.</li>
 </ul>
 
 <h2>2. 광고 · 분석을 통한 제3자 정보 수집</h2>
@@ -63,7 +64,7 @@
 <h3>분석 도구 (Google Analytics for Firebase)</h3>
 <p>본 앱은 서비스 개선을 위해 Google의 분석 도구 <b>Google Analytics for Firebase</b>를 사용합니다. 이 도구는 다음과 같은 정보를 수집·처리할 수 있습니다.</p>
 <ul>
-  <li>앱 사용 이벤트(예: 레벨 시작·결과·중도 포기, 발사와 고른 투하물, 조준 방식, 「오늘의 건물」, 광고 이용 결과, 체험 판, 게임 언어)</li>
+  <li>앱 사용 이벤트(예: 레벨 시작·결과·중도 포기, 발사와 고른 투하물, 조준 방식, 「오늘의 건물」, 광고 이용 결과, 체험 판, 결제창을 연 횟수와 결제 결과 · 결제 금액과 통화, 게임 언어)</li>
   <li>앱 인스턴스 식별자, 광고 식별자(Android 광고 ID · iOS에서 추적을 허용한 경우 IDFA), 기기 및 운영체제 정보</li>
   <li>IP 주소에 기반한 대략적 위치(국가 수준)</li>
   <li>앱 오류 및 진단 정보(오류 메시지, 앱이 예기치 않게 다시 시작됨, 그래픽 오류)</li>
@@ -131,7 +132,8 @@
 <p>The App sells a permanent item (a theme pack — opens more themes and bonus stages, and gives rewards without rewarded ads).</p>
 <ul>
   <li>Payments are processed by the Apple App Store or Google Play. The Developer never collects or sees card numbers, bank accounts, or any other payment details.</li>
-  <li>The App keeps only which item you bought and the themes it opened, stored only on your device and in your own cloud save (Section 4). To restore a purchase after a reinstall or on a new device, the App asks the store for your own purchase history.</li>
+  <li>The App keeps only which item you bought, when you bought it (and when a refund was confirmed) and the themes it opened, stored only on your device and in your own cloud save (Section 4). To restore a purchase after a reinstall or on a new device, the App asks the store for your own purchase history ([Restore Purchases] in Settings).</li>
+  <li>On Android, when the App starts and when you come back from the payment sheet, it asks Google Play for your own purchase list to lock the theme pack again if a purchase was refunded and to grant a payment that finished late. The result of that lookup is not sent off your device.</li>
 </ul>
 
 <h2>2. Third-party data collection through advertising and analytics</h2>
@@ -148,7 +150,7 @@
 <h3>Analytics (Google Analytics for Firebase)</h3>
 <p>To improve the App, we use Google's analytics tool <b>Google Analytics for Firebase</b>, which may collect and process:</p>
 <ul>
-  <li>In-app events (e.g., level start, result and quit, shots and the projectile chosen, aiming mode, the Daily Building, ad results, trial plays, the game language)</li>
+  <li>In-app events (e.g., level start, result and quit, shots and the projectile chosen, aiming mode, the Daily Building, ad results, trial plays, how often the purchase sheet was opened and its result, the price and currency of a purchase, the game language)</li>
   <li>An app instance identifier, advertising identifier (Android advertising ID; on iOS, the IDFA only if you allow tracking), device and operating-system information</li>
   <li>Approximate, country-level location derived from IP address</li>
   <li>App error and diagnostic information (error messages, unexpected app restarts, graphics errors)</li>
